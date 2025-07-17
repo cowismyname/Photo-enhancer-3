@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <title>PEV1</title>
+</head>
+<body>
+  <h1>
+    PhotoEnhancerV1
+  </h1>
+  <h3>"Your all in one enhancer"</h3>
+  <div class="fancy-box">
+  <h2>Welcome to PhotoEnhancerV1</h2>
+  <p>Welcome!, hope you are doing great, this is PhotoEnhancerV1 a site where you can create or enhance photos shooted from your low-clarity camera, there are options to choose from: plain, middle, and high specs let me describe these, plain is a <b>FREE</b> enhancer offering upto 15 enhanced photos (slow), middle is a budget friendly enhancer it can enhance more than 40 photos at just 99/-, lastly high specs gives you access to enhance more than 180+ photos just at 599/-<b> (info: some enhancements might not be 100% accurate, check before downloading, also as the enhancement increases the size also increases upto 12mb or 67+ mb)</b> SWIPE down to upload your photos and to get started for free or select the middle or high specs :)
+    <br>
+  </p>
+<label for="quality" class="select-label">Select any one of the options</label><br>
+<select class="quality-select" name="quality" id="quality">
+  <option value="free">Free Spec</option>
+  <option value="middle">Middle Spec</option>
+  <option value="high">High Spec</option>
+</select>
+    <script>
+  document.querySelectorAll('.quality-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const choice = button.dataset.quality;
+      alert("You selected: " + choice.charAt(0).toUpperCase() + choice.slice(1));
+    });
+  });
+</script>
+    
+</div>
+  
+        <div class="sel">Upload your images here:</div>
+  
+</body>
+</html>
